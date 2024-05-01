@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.container {
+  width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+}
+
+#new {
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #3943e2;
+  transition: background-color 0.3s;
+}
+
+#new:hover {
+  background-color: #2e3385;
+}
+
+.divTable {
+  padding: 10px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f0f1f3;
+}
+
+tr {
+  border-bottom: 1px solid #eef0f1;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+th.acao,
+td.acao {
+  text-align: center;
+  position: relative;
+}
+
+th.acao i,
+td.acao i {
+  font-size: 20px;
+  margin-top: 3px;
+  color: #888;
+}
+
+th.acao i:hover,
+td.acao i:hover {
+  color: #555;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.modal label {
+  font-size: 14px;
+  width: 100%;
+}
+
+.modal input {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal button {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #3943e2;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal button:hover {
+  background-color: #2e3385;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal .4s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

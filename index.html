@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estacionamento</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Reserva</span>
+      <button onclick="openModal()" id="new">Cadastrar</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Placa do Veículo</th>
+            <th>Nome do Proprietário</th>
+            <th>Número do Apartamento</th>
+            <th>Bloco do Apartamento</th>
+            <th>Modelo do Veículo</th>
+            <th>Cor do Veículo</th>
+            <th>Número da Vaga de Estacionamento</th>
+            <th>Disponibilidade </th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-placa">Placa do Veículo</label>
+          <input id="m-placa" type="text" required />
+    
+          <label for="m-proprietario">Nome do Proprietário</label>
+          <input id="m-proprietario" type="text" required />
+    
+          <label for="m-apartamento">Número do Apartamento</label>
+          <input id="m-apartamento" type="number" required />
+    
+          <label for="m-bloco">Bloco do Apartamento</label>
+          <input id="m-bloco" type="text" required />
+    
+          <label for="m-modelo">Modelo do Veículo</label>
+          <input id="m-modelo" type="text" required />
+    
+          <label for="m-cor">Cor do Veículo</label>
+          <input id="m-cor" type="text" required />
+    
+          <label for="m-vaga">Número da Vaga de Estacionamento</label>
+          <input id="m-vaga" type="number" required />
+    
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
